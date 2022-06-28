@@ -1,0 +1,27 @@
+.section-heading {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+
+    text-align: center;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    background-color: $primary-text-color;
+    border-bottom: 1px solid $header-border-color;
+}
+
+.main-header {
+    // @extend %container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
