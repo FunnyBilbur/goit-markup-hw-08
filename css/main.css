@@ -43,14 +43,6 @@ img {
   overflow: hidden;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .backdrop {
   z-index: 10;
   position: fixed;
@@ -127,6 +119,14 @@ img {
   font-weight: 700;
   line-height: 1.17;
   color: #212121;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section-heading {
