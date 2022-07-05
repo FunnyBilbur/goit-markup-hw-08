@@ -1,5 +1,6 @@
 /* Hero Section */
 .section-hero {
+    margin-top: 60px;
     text-align: center;
     background-color: $secondary-background-color;
     padding-top: 200px;
@@ -7,7 +8,7 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    height: 600px;
+    height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/background-hero.jpg);
     background-repeat: no-repeat;
@@ -15,41 +16,44 @@
     background-size: cover;
 
     @media screen and(min-width:480px) {
+        margin-top: 60px;
     }
 
     @media screen and(min-width:768px) {
+        //  какой-то    margin-top: 60px;
     }
 
     @media screen and(min-width:1200px) {
+        height: 600px;
         margin-top: 81px;
     }
 }
 
-.section-heading {
-    color: $title-text-color;
+// .section-heading {
+//     color: $title-text-color;
 
-    text-align: center;
-    margin: 0;
-    margin-bottom: 30px;
+//     text-align: center;
+//     margin: 0;
+//     margin-bottom: 30px;
 
-    @include respond-to(large) {
-        background-color: greenyellow;
-    }
+//     @include respond-to(large) {
+//         background-color: greenyellow;
+//     }
 
-    @media screen and(min-width:480px) {
-        font-size: 26px;
-    }
+//     @media screen and(min-width:480px) {
+//         font-size: 26px;
+//     }
 
-    @media screen and(min-width:768px) {
-    }
+//     @media screen and(min-width:768px) {
+//     }
 
-    @media screen and(min-width:1200px) {
-        font-size: 44px;
-        font-weight: 900;
-        line-height: 1.16;
-        margin-bottom: 50px;
-    }
-}
+//     @media screen and(min-width:1200px) {
+//         font-size: 44px;
+//         font-weight: 900;
+//         line-height: 1.16;
+//         margin-bottom: 50px;
+//     }
+// }
 
 .section-heading--hero {
     color: $primary-text-color;

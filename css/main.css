@@ -166,6 +166,28 @@ img {
   }
 }
 
+.section-heading {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+  color: #212121;
+  font-size: 28px;
+  font-weight: 700;
+}
+@media (min-width: 1200px) {
+  .section-heading {
+    background-color: greenyellow;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-heading {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
+
 .page-header {
   position: fixed;
   top: 0;
@@ -363,6 +385,7 @@ img {
 
 /* Hero Section */
 .section-hero {
+  margin-top: 60px;
   text-align: center;
   background-color: #2f303a;
   padding-top: 200px;
@@ -370,41 +393,22 @@ img {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  height: 600px;
+  height: 400px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-hero.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 480px) {
+  .section-hero {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .section-hero {
+    height: 600px;
     margin-top: 81px;
-  }
-}
-
-.section-heading {
-  color: #212121;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 30px;
-}
-@media (min-width: 1200px) {
-  .section-heading {
-    background-color: greenyellow;
-  }
-}
-@media screen and (min-width: 480px) {
-  .section-heading {
-    font-size: 26px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section-heading {
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.16;
-    margin-bottom: 50px;
   }
 }
 
