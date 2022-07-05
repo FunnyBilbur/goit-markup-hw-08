@@ -1,7 +1,20 @@
 /* About-Us Section */
 .about-us {
+    display: none;
+    @media screen and(min-width:480px) {
+    font-size: 26px;
+    }
+
+    @media screen and(min-width:768px) {
+
+    }
+
+    @media screen and(min-width:1200px) {
     padding-top: 0px;
     padding-bottom: 94px;
+    display: block;
+    }
+    
 }
 
 .about-us__list {

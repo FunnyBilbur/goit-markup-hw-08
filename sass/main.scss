@@ -1,12 +1,13 @@
 @import './abstracts/placeholders';
 @import './abstracts/variables';
+@import './abstracts/mixins';
 
 @import './components/backdrop';
 @import './components/container';
+@import './components/section';
 
-@import './layout/header';
+@import './layout/page-header';
 @import './layout/logo';
-@import './layout/navigation';
 @import './layout/section-hero';
 @import './layout/section-features';
 @import './layout/section-about-us';

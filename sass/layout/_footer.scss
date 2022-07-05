@@ -7,13 +7,31 @@
 }
 
 .footer__positioning {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+    // display: flex;
+    // align-items: baseline;
+    @media screen and(min-width:480px) {}
+    
+    @media screen and(min-width:768px) {}
+    
+    @media screen and(min-width:1200px) {
+        display: flex;
+        align-items: baseline;
+        text-align:left
+    }
 }
 
 .footer__contacts-container {
     flex-grow: 1;
-    margin-right: 70px;
+    margin-bottom: 60px;
+    @media screen and(min-width:480px) {}
+    
+    @media screen and(min-width:768px) {}
+    
+    @media screen and(min-width:1200px) {
+        margin-bottom: 0px;
+        margin-right: 70px;
+    }
 }
 
 .footer__address-item + .footer__address-item {
@@ -53,6 +71,8 @@
     display: flex;
     justify-content: center;
     align-content: center;
+
+
 }
 
 .footer__social-link {
@@ -76,21 +96,45 @@
 }
 
 .footer__subscribe-container {
-    margin-left: 93px;
+    margin-top: 60px;
+    @media screen and(min-width:480px) {}
+    
+    @media screen and(min-width:768px) {}
+    
+    @media screen and(min-width:1200px) {
+        margin-top: 0px;
+        margin-left: 93px;
+    }
 }
 
 .footer__subscribe-form {
-    display: flex;
+    @media screen and(min-width:480px) {}
+    
+    @media screen and(min-width:768px) {}
+    
+    @media screen and(min-width:1200px) {
+            display: flex;
+    }
 }
 
 .footer__email-field {
     background-color: transparent;
     padding: 15px 16px;
-    width: 358px;
+    // width: 450px;
     height: 50px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    @media screen and(min-width:480px) {
+        width: 450px;
+    }
+    
+    @media screen and(min-width:768px) {}
+    
+    @media screen and(min-width:1200px) {
+        width: 358px;
+    }
 }
 
 .footer__subscribe-text {
@@ -113,10 +157,18 @@
     transition: box-shadow 250ms $transition-function,
     background-color 250ms $transition-function;
     cursor: pointer;
-    margin-left: 12px;
 
     &:hover, &:focus{
     background-color: $accent-hover;
+    }
+
+    margin-top: 20px;
+    @media screen and(min-width:480px) {}
+    
+    @media screen and(min-width:768px) {}
+    
+    @media screen and(min-width:1200px) {
+        margin-left: 12px;
     }
 }
 

@@ -1,15 +1,20 @@
 /* Our-Team Section */
 .our-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: $our-team-color;
 }
 
 .our-team__list {
     @extend %list;
+    
+    @media screen and(min-width:480px) {}
+    
+    @media screen and(min-width:768px) {}
+    
+    @media screen and(min-width:1200px) {
     display: flex;
     align-items: center;
     justify-content: center;
+    }
 }
 
 .our-team__description-container {
@@ -26,7 +31,16 @@
     border-radius: 0px 0px 4px 4px;
 
     & + &{
-    margin-left: 30px;
+        margin-top: 30px;
+        // margin-left: 30px;
+        @media screen and(min-width:480px) {}
+    
+        @media screen and(min-width:768px) {}
+    
+        @media screen and(min-width:1200px) {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
     }
 }
 

@@ -17,7 +17,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body style="padding-top: 81px">
+  <body>
     <!-- Header -->
     <header class="page-header">
       <div class="container main-header">
@@ -34,16 +34,22 @@
               <a href="" class="site-nav__link">Контакты</a>
             </li>
           </ul>
+          <button type="button" class="menu-button">
+            <svg width="40px" height="40px" aria-label="Menu Switcher">
+              <use href="./images/icons.svg#icon-menu"></use>
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
         </nav>
         <ul class="contact-header__list list">
-          <li class="site-nav__item">
+          <li class="contact-header__item">
             <a href="mailto:info@devstudio.com" class="contact-header__link"
               ><svg class="contact-header__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-email"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="site-nav__item">
+          <li class="contact-header__item">
             <a href="tel:+380661834560" class="contact-header__link"
               ><svg class="contact-header__icon" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-phone"></use></svg
@@ -67,7 +73,7 @@
       </section>
 
       <!-- Features Section -->
-      <section class="features">
+      <section class="section features">
         <div class="container">
           <h2 class="features--visually-hidden">Наши особенности</h2>
           <ul class="features__list list">
@@ -120,7 +126,7 @@
       </section>
 
       <!-- About-Us Section -->
-      <section class="about-us">
+      <section class="section about-us">
         <div class="container">
           <h2 class="section-heading">Чем мы занимаемся</h2>
           <ul class="about-us__list list">
@@ -157,7 +163,7 @@
       </section>
 
       <!-- Our Team Section -->
-      <section class="our-team">
+      <section class="section our-team">
         <div class="container">
           <h2 class="section-heading">Наша команда</h2>
           <ul class="our-team__list list">
@@ -362,7 +368,7 @@
       </section>
 
       <!-- Our Clients Section -->
-      <section class="our-clients">
+      <section class="section our-clients">
         <div class="container">
           <h2 class="section-heading">Постоянные клиенты</h2>
           <ul class="our-clients__list list">
