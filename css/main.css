@@ -302,6 +302,11 @@ img {
   margin-left: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .contact-header__item + .contact-header__item {
+    margin-top: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contact-header__item {
     margin-left: 50px;
@@ -388,8 +393,8 @@ img {
   margin-top: 60px;
   text-align: center;
   background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -405,10 +410,17 @@ img {
     margin-top: 60px;
   }
 }
+@media screen and (min-width: 768px) {
+  .section-hero {
+    margin-top: 80px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .section-hero {
     height: 600px;
     margin-top: 81px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -464,13 +476,25 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: 354px;
+  }
+  .features__item:nth-child(2n+2) {
+    margin-left: 30px;
   }
 }
 .features__item + .features__item {
   margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .features__item + .features__item {
+    margin-top: 0px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .features__item + .features__item {
@@ -585,6 +609,15 @@ img {
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 768px) {
+  .our-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 1200px) {
   .our-team__list {
     display: -webkit-box;
@@ -614,6 +647,11 @@ img {
 }
 .our-team__item + .our-team__item {
   margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .our-team__item + .our-team__item {
+    margin-top: 0px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .our-team__item + .our-team__item {

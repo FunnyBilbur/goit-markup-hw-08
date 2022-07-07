@@ -3,8 +3,8 @@
     margin-top: 60px;
     text-align: center;
     background-color: $secondary-background-color;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -20,40 +20,16 @@
     }
 
     @media screen and(min-width:768px) {
-        //  какой-то    margin-top: 60px;
+        margin-top: 80px;
     }
 
     @media screen and(min-width:1200px) {
         height: 600px;
         margin-top: 81px;
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
 }
-
-// .section-heading {
-//     color: $title-text-color;
-
-//     text-align: center;
-//     margin: 0;
-//     margin-bottom: 30px;
-
-//     @include respond-to(large) {
-//         background-color: greenyellow;
-//     }
-
-//     @media screen and(min-width:480px) {
-//         font-size: 26px;
-//     }
-
-//     @media screen and(min-width:768px) {
-//     }
-
-//     @media screen and(min-width:1200px) {
-//         font-size: 44px;
-//         font-weight: 900;
-//         line-height: 1.16;
-//         margin-bottom: 50px;
-//     }
-// }
 
 .section-heading--hero {
     color: $primary-text-color;
