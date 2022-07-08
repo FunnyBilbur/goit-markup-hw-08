@@ -23,6 +23,13 @@
       <div class="container main-header">
         <nav class="site-nav">
           <a href="./index.html" class="logo"><span class="logo--web-color">Web</span>Studio</a>
+          <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+            <svg width="40px" height="40px" aria-label="Menu Switcher">
+              <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
           <ul class="site-nav__list list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__link--active">Студия</a>
@@ -34,29 +41,23 @@
               <a href="" class="site-nav__link">Контакты</a>
             </li>
           </ul>
-          <button type="button" class="menu-button">
-            <svg width="40px" height="40px" aria-label="Menu Switcher">
-              <use href="./images/icons.svg#icon-menu"></use>
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
+          <ul class="contact-header__list list">
+            <li class="contact-header__item">
+              <a href="mailto:info@devstudio.com" class="contact-header__link"
+                ><svg class="contact-header__icon" width="16px" height="12px">
+                  <use href="./images/icons.svg#icon-email"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-header__item">
+              <a href="tel:+380661834560" class="contact-header__link"
+                ><svg class="contact-header__icon" width="10px" height="16px">
+                  <use href="./images/icons.svg#icon-phone"></use></svg
+                >+38 066 183 45 60</a
+              >
+            </li>
+          </ul>
         </nav>
-        <ul class="contact-header__list list">
-          <li class="contact-header__item">
-            <a href="mailto:info@devstudio.com" class="contact-header__link"
-              ><svg class="contact-header__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-email"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-header__item">
-            <a href="tel:+380661834560" class="contact-header__link"
-              ><svg class="contact-header__icon" width="10px" height="16px">
-                <use href="./images/icons.svg#icon-phone"></use></svg
-              >+38 066 183 45 60</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -168,7 +169,7 @@
           <h2 class="section-heading">Наша команда</h2>
           <ul class="our-team__list list">
             <li class="our-team__item">
-              <img src="./images/ihor.jpg" alt="Игорь Демьяненко" width="270" />
+              <img class="our-team__img" src="./images/ihor.jpg" alt="Игорь Демьяненко" />
               <div class="our-team__description-container">
                 <h3 class="our-team__name">Игорь Демьяненко</h3>
                 <p class="our-team__position-name">Product Designer</p>
@@ -217,7 +218,7 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img src="./images/olga.jpg" alt="Ольга Репина" width="270" />
+              <img class="our-team__img" src="./images/olga.jpg" alt="Ольга Репина" />
               <div class="our-team__description-container">
                 <h3 class="our-team__name">Ольга Репина</h3>
                 <p class="our-team__position-name">Frontend Developer</p>
@@ -266,7 +267,7 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img src="./images/nikolai.jpg" alt="Николай Тарасов" width="270" />
+              <img class="our-team__img" src="./images/nikolai.jpg" alt="Николай Тарасов" />
               <div class="our-team__description-container">
                 <h3 class="our-team__name">Николай Тарасов</h3>
                 <p class="our-team__position-name">Marketing</p>
@@ -315,7 +316,7 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img src="./images/mihail.jpg" alt="Михаил Ермаков" width="270" />
+              <img class="our-team__img" src="./images/mihail.jpg" alt="Михаил Ермаков" />
               <div class="our-team__description-container">
                 <h3 class="our-team__name">Михаил Ермаков</h3>
                 <p class="our-team__position-name">UI Designer</p>
@@ -606,5 +607,6 @@
       document.body.style.paddingTop = `${headerHeight}px`;
     </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
