@@ -174,16 +174,11 @@ img {
   font-size: 28px;
   font-weight: 700;
 }
-@media (min-width: 1200px) {
-  .section-heading {
-    background-color: greenyellow;
-  }
-}
 @media screen and (min-width: 1200px) {
   .section-heading {
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.16;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
     margin-bottom: 50px;
   }
 }
@@ -217,6 +212,12 @@ img {
             justify-content: space-between;
   }
 }
+@media screen and (min-width: 1200px) {
+  .main-header {
+    width: 1200px;
+  }
+}
+
 .site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,9 +296,16 @@ img {
 }
 @media screen and (min-width: 768px) {
   .contact-header__link {
+    font-size: 12px;
     padding: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contact-header__link {
+    font-size: 14px;
+  }
+}
+
 .site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
@@ -309,7 +317,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contact-header__item {
-    margin-left: 50px;
+    margin-top: 0px !important;
+    margin-left: 30px;
   }
 }
 
@@ -488,6 +497,11 @@ img {
     margin-left: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: 270px;
+  }
+}
 .features__item + .features__item {
   margin-top: 30px;
 }
@@ -659,6 +673,21 @@ img {
     margin-left: 30px;
   }
 }
+@media screen and (min-width: 768px) {
+  .our-team__item:nth-child(2n+2) {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-team__item:nth-child(n+3) {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team__item:nth-child(n+3) {
+    margin-top: 0px;
+  }
+}
 
 .our-team__name {
   font-weight: 500;
@@ -806,6 +835,18 @@ img {
 .footer__positioning {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .footer__positioning {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__positioning {
     display: -webkit-box;
@@ -815,6 +856,8 @@ img {
         -ms-flex-align: baseline;
             align-items: baseline;
     text-align: left;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -824,8 +867,19 @@ img {
           flex-grow: 1;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer__contacts-container {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    margin-right: 165px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__contacts-container {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     margin-bottom: 0px;
     margin-right: 70px;
   }
@@ -901,6 +955,18 @@ img {
 .footer__subscribe-container {
   margin-top: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer__subscribe-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__subscribe-container {
     margin-top: 0px;
@@ -908,11 +974,26 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer__subscribe-form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__subscribe-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -967,6 +1048,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__subscribe-button {
     margin-left: 12px;
+    margin-top: 0px;
   }
 }
 
