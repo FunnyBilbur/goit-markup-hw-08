@@ -23,40 +23,41 @@
       <div class="container main-header">
         <nav class="site-nav">
           <a href="./index.html" class="logo"><span class="logo--web-color">Web</span>Studio</a>
+          <div class="menu-container">
+            <ul class="site-nav__list list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link site-nav__link--active">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="contact-header__list list">
+              <li class="contact-header__item">
+                <a href="mailto:info@devstudio.com" class="contact-header__link"
+                  ><svg class="contact-header__icon" width="16px" height="12px">
+                    <use href="./images/icons.svg#icon-email"></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact-header__item">
+                <a href="tel:+380661834560" class="contact-header__link"
+                  ><svg class="contact-header__icon" width="10px" height="16px">
+                    <use href="./images/icons.svg#icon-phone"></use></svg
+                  >+38 066 183 45 60</a
+                >
+              </li>
+            </ul>
+          </div>
           <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
             <svg width="40px" height="40px" aria-label="Menu Switcher">
               <use class="icon-close" href="./images/icons.svg#icon-close"></use>
               <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
-
-          <ul class="site-nav__list list">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link site-nav__link--active">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Контакты</a>
-            </li>
-          </ul>
-          <ul class="contact-header__list list">
-            <li class="contact-header__item">
-              <a href="mailto:info@devstudio.com" class="contact-header__link"
-                ><svg class="contact-header__icon" width="16px" height="12px">
-                  <use href="./images/icons.svg#icon-email"></use></svg
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contact-header__item">
-              <a href="tel:+380661834560" class="contact-header__link"
-                ><svg class="contact-header__icon" width="10px" height="16px">
-                  <use href="./images/icons.svg#icon-phone"></use></svg
-                >+38 066 183 45 60</a
-              >
-            </li>
-          </ul>
         </nav>
       </div>
     </header>
@@ -169,7 +170,27 @@
           <h2 class="section-heading">Наша команда</h2>
           <ul class="our-team__list list">
             <li class="our-team__item">
-              <img class="our-team__img" src="./images/ihor.jpg" alt="Игорь Демьяненко" />
+              <picture>
+                <source
+                  srcset="./images/team-img-1-desktop.jpg 1x, ./images/team-img-1-desktop-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team-img-1-tab.jpg 1x, ./images/team-img-1-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team-img-1-mob.jpg 1x, ./images/team-img-1-mob-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="our-team__img"
+                  src="./images/team-img-1-mob.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450px"
+                />
+              </picture>
+
               <div class="our-team__description-container">
                 <h3 class="our-team__name">Игорь Демьяненко</h3>
                 <p class="our-team__position-name">Product Designer</p>
@@ -218,7 +239,26 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img class="our-team__img" src="./images/olga.jpg" alt="Ольга Репина" />
+              <picture>
+                <source
+                  srcset="./images/team-img-2-desktop.jpg 1x, ./images/team-img-2-desktop-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team-img-2-tab.jpg 1x, ./images/team-img-2-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team-img-2-mob.jpg 1x, ./images/team-img-2-mob-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="our-team__img"
+                  src="./images/team-img-2-mob.jpg"
+                  alt="Ольга Репина"
+                  width="450px"
+                />
+              </picture>
               <div class="our-team__description-container">
                 <h3 class="our-team__name">Ольга Репина</h3>
                 <p class="our-team__position-name">Frontend Developer</p>
@@ -267,7 +307,26 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img class="our-team__img" src="./images/nikolai.jpg" alt="Николай Тарасов" />
+              <picture>
+                <source
+                  srcset="./images/team-img-3-desktop.jpg 1x, ./images/team-img-3-desktop-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team-img-3-tab.jpg 1x, ./images/team-img-3-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team-img-3-mob.jpg 1x, ./images/team-img-3-mob-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="our-team__img"
+                  src="./images/team-img-3-mob.jpg"
+                  alt="Николай Тарасов"
+                  width="450px"
+                />
+              </picture>
               <div class="our-team__description-container">
                 <h3 class="our-team__name">Николай Тарасов</h3>
                 <p class="our-team__position-name">Marketing</p>
@@ -316,7 +375,26 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img class="our-team__img" src="./images/mihail.jpg" alt="Михаил Ермаков" />
+              <picture>
+                <source
+                  srcset="./images/team-img-4-desktop.jpg 1x, ./images/team-img-4-desktop-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team-img-4-tab.jpg 1x, ./images/team-img-4-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team-img-4-mob.jpg 1x, ./images/team-img-4-mob-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="our-team__img"
+                  src="./images/team-img-4-mob.jpg"
+                  alt="Михаил Ермаков"
+                  width="450px"
+                />
+              </picture>
               <div class="our-team__description-container">
                 <h3 class="our-team__name">Михаил Ермаков</h3>
                 <p class="our-team__position-name">UI Designer</p>

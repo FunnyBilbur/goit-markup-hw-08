@@ -1,22 +1,21 @@
-@mixin respond-to($breakpoint) {
-
-    // If the key exists in the map
-    @if map-has-key($breakpoints, $breakpoint) {
-
-        // Prints a media query based on the value
-        @media (min-width: map-get($breakpoints, $breakpoint)) {
-            @content;
-        }
+@mixin mobile {
+    @media screen and (min-width: 480px) {
+        @content;
     }
-
-    // If the key doesn't exist in the map
-    @else {
-        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        +"Available breakpoints are: #{map-keys($breakpoints)}.";
+}
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and (min-width: 1200px) {
+        @content;
     }
 }
 
-$breakpoints: (
-    'small': 480px,
-    'medium': 768px,
-    'large': 1200px) !default;
+@mixin retina {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        @content;
+    }
+}

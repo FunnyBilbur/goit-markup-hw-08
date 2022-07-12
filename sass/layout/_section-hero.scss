@@ -3,30 +3,43 @@
     margin-top: 60px;
     text-align: center;
     background-color: $secondary-background-color;
-    padding-top: 118px;
-    padding-bottom: 118px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/background-hero.jpg);
+        url(../images/hero-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-    @media screen and(min-width:480px) {
+    @include retina {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero-bg-mobile-2x.jpg);
     }
-
-    @media screen and(min-width:768px) {
+    @include tablet {
         margin-top: 80px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero-bg-tablet.jpg);
+        @include retina {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero-bg-tablet-2x.jpg);
+        }
     }
 
-    @media screen and(min-width:1200px) {
+    @include desktop {
         height: 600px;
         margin-top: 81px;
         padding-top: 200px;
         padding-bottom: 200px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero-bg-desktop.jpg);
+        @include retina {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero-bg-desktop-2x.jpg);
+        }
     }
 }
 
@@ -36,7 +49,6 @@
     font-size: 26px;
     line-height: 1.36;
 
-    width: 360px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
@@ -44,12 +56,13 @@
     margin-right: auto;
     margin-bottom: 30px;
 
-    @media screen and(min-width:480px) {
+    @include mobile {
+        width: 360px;
     }
-    @media screen and(min-width:768px) {
+    @include tablet {
+        width: 360px;
     }
-
-    @media screen and(min-width:1200px) {
+    @include desktop {
         font-size: 44px;
         width: 696px;
     }

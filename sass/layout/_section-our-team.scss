@@ -61,17 +61,26 @@
 }
 
 .our-team__img {
-    @media screen and(min-width:480px) {
+    @include mobile {
         width: 450px;
     }
-
-    @media screen and(min-width:768px) {
+    @include tablet {
         width: 354px;
     }
-
-    @media screen and(min-width:1200px) {
+    @include desktop {
         width: 270px;
     }
+    // @media screen and(min-width:480px) {
+    //     width: 450px;
+    // }
+
+    // @media screen and(min-width:768px) {
+    //     width: 354px;
+    // }
+
+    // @media screen and(min-width:1200px) {
+    //     width: 270px;
+    // }
 }
 .our-team__name {
     font-weight: 500;
