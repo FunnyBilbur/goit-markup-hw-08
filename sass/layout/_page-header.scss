@@ -246,11 +246,15 @@
 .mob-menu__link--active {
     @extend .mob-menu__link;
     color: $accent-color;
-    font-size: 34px;
+    font-size: 32px;
+    @include mobile {
+        font-size: 34px;
+    }
 }
 .mob-menu__social-list {
     @extend %list;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 64px;
 }
 
