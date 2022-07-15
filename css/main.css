@@ -171,6 +171,12 @@ img {
   }
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .page-header {
   position: fixed;
   top: 0;
@@ -356,6 +362,9 @@ img {
 
 .menu-open-button,
 .menu-close-button {
+  position: fixed;
+  top: 10px;
+  right: 15px;
   display: block;
   margin-left: auto;
   padding: 0;
@@ -367,24 +376,6 @@ img {
 .menu-close-button {
     display: none;
   }
-}
-.menu-open-button .icon-close,
-.menu-close-button .icon-close {
-  display: none;
-}
-.menu-open-button.is-open .icon-close,
-.menu-close-button.is-open .icon-close {
-  display: block;
-}
-.menu-open-button.is-open .icon-menu,
-.menu-close-button.is-open .icon-menu {
-  display: none;
-}
-
-.menu-close-button {
-  position: fixed;
-  top: 10px;
-  right: 15px;
 }
 
 .mob-menu {

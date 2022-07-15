@@ -167,6 +167,9 @@
 
 .menu-open-button,
 .menu-close-button {
+    position: fixed;
+    top: 10px;
+    right: 15px;
     display: block;
     margin-left: auto;
     padding: 0;
@@ -177,22 +180,16 @@
         display: none;
     }
 
-    .icon-close {
-        display: none;
-    }
+    // .icon-close {
+    //     display: none;
+    // }
 
-    &.is-open .icon-close {
-        display: block;
-    }
-    &.is-open .icon-menu {
-        display: none;
-    }
-}
-
-.menu-close-button {
-    position: fixed;
-    top: 10px;
-    right: 15px;
+    // &.is-hidden .icon-close {
+    //     display: block;
+    // }
+    // &.is-hidden .icon-menu {
+    //     display: none;
+    // }
 }
 
 .mob-menu {
