@@ -52,13 +52,97 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+          <button
+            type="button"
+            class="menu-open-button is-open"
+            aria-expanded="false"
+            data-menu-button
+          >
             <svg width="40px" height="40px" aria-label="Menu Switcher">
               <use class="icon-close" href="./images/icons.svg#icon-close"></use>
               <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
         </nav>
+      </div>
+      <div class="mob-menu">
+        <div class="container">
+          <button
+            type="button"
+            class="menu-close-button is-open"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg width="40px" height="40px" aria-label="Menu Switcher">
+              <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mob-menu__container">
+            <ul class="mob-menu-nav__list list">
+              <li class="mob-menu-nav__item">
+                <a href="./index.html" class="mob-menu-nav__link mob-menu-nav__link--active"
+                  >Студия</a
+                >
+              </li>
+              <li class="mob-menu-nav__item">
+                <a href="./portfolio.html" class="mob-menu-nav__link">Портфолио</a>
+              </li>
+              <li class="mob-menu-nav__item">
+                <a href="" class="mob-menu-nav__link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="mob-menu__contact-list list">
+              <li class="mob-menu__contact-item">
+                <a href="tel:+380661834560" class="mob-menu__link mob-menu__link--active">
+                  +38 066 183 45 60</a
+                >
+              </li>
+              <li class="mob-menu__contact-item">
+                <a href="mailto:info@devstudio.com" class="mob-menu__link"> info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mob-menu__social-list list">
+              <li class="mob-menu__social-item">
+                <a
+                  class="mob-menu__social-link link"
+                  href="http://instagram.com"
+                  target="_blank"
+                  aria-label="Instagram"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-menu__social-item">
+                <a
+                  class="mob-menu__social-link link"
+                  href="http://twitter.com"
+                  target="_blank"
+                  aria-label="Twitter"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mob-menu__social-item">
+                <a
+                  class="mob-menu__social-link link"
+                  href="http://facebook.com"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a
+                  class="mob-menu__social-link link"
+                  href="http://linkedin.com"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -134,7 +218,13 @@
           <ul class="about-us__list list">
             <li class="about-us__item">
               <div class="about-us__card-container">
-                <img src="./images/img_1_planning.jpg" alt="Планирование модели" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/todo-img1.jpg 1x, ./images/todo-img1-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <img src="./images/todo-img1.jpg" alt="Планирование модели" width="370px" />
+                </picture>
                 <div class="about-us__text-container">
                   <p class="about-us__text">Десктопные приложения</p>
                 </div>
@@ -142,11 +232,17 @@
             </li>
             <li class="about-us__item">
               <div class="about-us__card-container">
-                <img
-                  src="./images/img_2_app_design.jpg"
-                  alt="Тестирование дизайна приложения"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/todo-img2.jpg 1x, ./images/todo-img2-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    src="./images/todo-img2.jpg"
+                    alt="Тестирование дизайна приложения"
+                    width="370px"
+                  />
+                </picture>
                 <div class="about-us__text-container">
                   <p class="about-us__text">Мобильные приложения</p>
                 </div>
@@ -154,7 +250,13 @@
             </li>
             <li class="about-us__item">
               <div class="about-us__card-container">
-                <img src="./images/img_3_modern_technology.jpg" alt="" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/todo-img3.jpg 1x, ./images/todo-img3-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <img src="./images/todo-img3.jpg" alt="Дизайнерские решения" width="370px" />
+                </picture>
                 <div class="about-us__text-container">
                   <p class="about-us__text">Дизайнерские решения</p>
                 </div>

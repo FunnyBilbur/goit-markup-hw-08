@@ -19,13 +19,13 @@ img {
   height: auto;
 }
 
-.portfolio__project-list, .portfolio__btn-list, .footer__address-list, .footer__social-list, .our-clients__list, .our-team__social-list, .our-team__list, .about-us__list, .features__list, .contact-header__list, .site-nav__list {
+.portfolio__project-list, .portfolio__btn-list, .footer__address-list, .footer__social-list, .our-clients__list, .our-team__social-list, .our-team__list, .about-us__list, .features__list, .mob-menu-nav__list, .mob-menu__social-list, .mob-menu__contact-list, .contact-header__list, .site-nav__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.portfolio__project-link, .our-clients__link, .our-team__social-link {
+.portfolio__project-link, .our-clients__link, .our-team__social-link, .mob-menu__social-link {
   text-decoration: none;
 }
 
@@ -354,28 +354,149 @@ img {
   fill: currentColor;
 }
 
-.menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
+.menu-open-button,
+.menu-close-button {
+  display: block;
+  margin-left: auto;
   padding: 0;
   border: none;
   background-color: transparent;
 }
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .menu-open-button,
+.menu-close-button {
     display: none;
   }
 }
-.menu-button .icon-close {
+.menu-open-button .icon-close,
+.menu-close-button .icon-close {
   display: none;
 }
-.menu-button.is-open .icon-close {
+.menu-open-button.is-open .icon-close,
+.menu-close-button.is-open .icon-close {
   display: block;
 }
-.menu-button.is-open .icon-menu {
+.menu-open-button.is-open .icon-menu,
+.menu-close-button.is-open .icon-menu {
   display: none;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.mob-menu__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.mob-menu__contact-item + .mob-menu__contact-item {
+  margin-top: 32px;
+}
+
+.mob-menu__link, .mob-menu__link--active {
+  color: #757575;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mob-menu__link--active {
+  color: #2196f3;
+  font-size: 34px;
+}
+
+.mob-menu__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mob-menu__social-item + .mob-menu__social-item {
+  margin-left: 20px;
+}
+
+.mob-menu__social-link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2196f3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22em;
+  letter-spacing: 0.02em;
+}
+.mob-menu__social-link::before {
+  content: "";
+  width: 22px;
+  height: 0px;
+  top: 0;
+  left: 0;
+  margin-left: -16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.mob-menu-nav__link {
+  color: #212121;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-nav__link:hover, .mob-menu-nav__link:focus {
+  color: #2196f3;
+}
+
+.mob-menu-nav__link--active {
+  color: #2196f3;
 }
 
 .logo {
