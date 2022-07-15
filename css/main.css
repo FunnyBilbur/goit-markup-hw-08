@@ -407,7 +407,7 @@ img {
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100vw;
   height: 100%;
   padding-top: 48px;
@@ -1215,6 +1215,7 @@ img {
 }
 
 .footer__email-field {
+  color: #ffffff;
   background-color: transparent;
   padding: 15px 16px;
   height: 50px;
