@@ -177,6 +177,10 @@ img {
   pointer-events: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .page-header {
   position: fixed;
   top: 0;
