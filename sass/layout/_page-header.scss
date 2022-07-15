@@ -189,6 +189,13 @@
     }
 }
 
+.mob-menu.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(-100%);
+    transition: transform 400ms $transition-function, visibility ease-in-out 400ms;
+}
+
 .mob-menu {
     position: fixed;
     top: 0;
@@ -199,12 +206,8 @@
     height: 100%;
     padding-top: 48px;
     padding-bottom: 48px;
-
-    // transform: translateX(-100%);
-    // transform: translateX(0);
-    // .is-hidden {
-    // }
-    // transition: transform 850ms $transition-function;
+    transform: translateX(0);
+    transition: transform 400ms $transition-function;
     .container {
         display: flex;
         flex-direction: column;
