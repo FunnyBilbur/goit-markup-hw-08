@@ -23,41 +23,118 @@
       <div class="container main-header">
         <nav class="site-nav">
           <a href="./index.html" class="logo"><span class="logo--web-color">Web</span>Studio</a>
-          <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+          <div class="menu-container">
+            <ul class="site-nav__list list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link site-nav__link--active"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="contact-header__list list">
+              <li class="contact-header__item">
+                <a href="mailto:info@devstudio.com" class="contact-header__link"
+                  ><svg class="contact-header__icon" width="16px" height="12px">
+                    <use href="./images/icons.svg#icon-email"></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact-header__item">
+                <a href="tel:+380661834560" class="contact-header__link"
+                  ><svg class="contact-header__icon" width="10px" height="16px">
+                    <use href="./images/icons.svg#icon-phone"></use></svg
+                  >+38 066 183 45 60</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="menu-open-button" aria-expanded="false" data-menu-button>
             <svg width="40px" height="40px" aria-label="Menu Switcher">
-              <use class="icon-close" href="./images/icons.svg#icon-close"></use>
               <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
-
-          <ul class="site-nav__list list">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link site-nav__link--active">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Контакты</a>
-            </li>
-          </ul>
-          <ul class="contact-header__list list">
-            <li class="contact-header__item">
-              <a href="mailto:info@devstudio.com" class="contact-header__link"
-                ><svg class="contact-header__icon" width="16px" height="12px">
-                  <use href="./images/icons.svg#icon-email"></use></svg
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contact-header__item">
-              <a href="tel:+380661834560" class="contact-header__link"
-                ><svg class="contact-header__icon" width="10px" height="16px">
-                  <use href="./images/icons.svg#icon-phone"></use></svg
-                >+38 066 183 45 60</a
-              >
-            </li>
-          </ul>
         </nav>
+      </div>
+      <div class="mob-menu is-hidden">
+        <button type="button" class="menu-close-button" aria-expanded="false" data-menu-button>
+          <svg width="40px" height="40px" aria-label="Menu Switcher">
+            <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="container">
+          <div class="mob-menu__top">
+            <ul class="mob-menu-nav__list list">
+              <li class="mob-menu-nav__item">
+                <a href="./index.html" class="mob-menu-nav__link">Студия</a>
+              </li>
+              <li class="mob-menu-nav__item">
+                <a href="./portfolio.html" class="mob-menu-nav__link mob-menu-nav__link--active"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu-nav__item">
+                <a href="" class="mob-menu-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__bottom">
+            <ul class="mob-menu__contact-list list">
+              <li class="mob-menu__contact-item">
+                <a href="tel:+380661834560" class="mob-menu__link mob-menu__link--active">
+                  +38 066 183 45 60</a
+                >
+              </li>
+              <li class="mob-menu__contact-item">
+                <a href="mailto:info@devstudio.com" class="mob-menu__link"> info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mob-menu__social-list list">
+              <li class="mob-menu__social-item">
+                <a
+                  class="mob-menu__social-link link"
+                  href="http://instagram.com"
+                  target="_blank"
+                  aria-label="Instagram"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-menu__social-item">
+                <a
+                  class="mob-menu__social-link link"
+                  href="http://twitter.com"
+                  target="_blank"
+                  aria-label="Twitter"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mob-menu__social-item">
+                <a
+                  class="mob-menu__social-link link"
+                  href="http://facebook.com"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a
+                  class="mob-menu__social-link link"
+                  href="http://linkedin.com"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -451,9 +528,9 @@
               <li class="footer__address-item">
                 <a
                   class="footer__address-link footer__address-link--opacity"
-                  href="tel:+380991111111"
+                  href="tel:+380661834560"
                   target="_blank"
-                  >+38 099 111 11 11</a
+                  >+38 066 183 45 60</a
                 >
               </li>
             </ul>
