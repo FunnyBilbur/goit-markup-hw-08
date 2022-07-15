@@ -189,6 +189,12 @@
     }
 }
 
+.menu-close-button {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+}
+
 .mob-menu {
     position: fixed;
     top: 0;
@@ -197,7 +203,7 @@
     background-color: #fff;
     width: 100vw;
     height: 100vh;
-    padding-top: 10px;
+    padding-top: 48px;
     padding-bottom: 48px;
 
     .container {
@@ -206,16 +212,13 @@
         justify-content: space-between;
         height: 100%;
         overflow-y: auto;
+
+        padding-left: 40px;
+        padding-right: 40px;
     }
     @include tablet {
         display: none;
     }
-}
-.mob-menu__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
 }
 
 .mob-menu__contact-list {
@@ -248,11 +251,17 @@
 .mob-menu__social-list {
     @extend %list;
     display: flex;
+    margin-top: 64px;
 }
 
 .mob-menu__social-item {
+    padding-right: 10px;
     & + & {
-        margin-left: 20px;
+        padding-left: 10px;
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    &:last-child {
+        padding-right: 0px;
     }
 }
 
@@ -267,16 +276,6 @@
     font-weight: 500;
     line-height: 1.22em;
     letter-spacing: 0.02em;
-    &::before {
-        content: "";
-        width: 22px;
-        height: 0px;
-        top: 0;
-        left: 0;
-        margin-left: -16px;
-        border: 1px solid $line-color;
-        transform: rotate(90deg);
-    }
 }
 
 .mob-menu-nav__list {
