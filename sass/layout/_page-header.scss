@@ -246,7 +246,7 @@
 .mob-menu__link--active {
     @extend .mob-menu__link;
     color: $accent-color;
-    font-size: 32px;
+    font-size: 29px;
     @include mobile {
         font-size: 34px;
     }
