@@ -180,9 +180,13 @@
         display: none;
     }
 
-    // .icon-close {
-    //     display: none;
-    // }
+    .icon-menu,
+    .icon-close {
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
+    }
 
     // &.is-hidden .icon-close {
     //     display: block;
